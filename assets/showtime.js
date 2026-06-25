@@ -52,6 +52,24 @@
     });
   }
 
+  /* ---- Lead submission helper (POSTs JSON to the serverless endpoint) ---- */
+  function submitLead(payload) {
+    payload.source = payload.source || (location.pathname.split('/').pop() || 'index.html');
+    payload.timestamp = payload.timestamp || new Date().toISOString();
+    return fetch('/api/lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(function (res) {
+      return res.json().catch(function () { return {}; }).then(function (body) {
+        if (!res.ok || !body.ok) {
+          throw new Error((body && body.error) || 'Something went wrong. Please try again.');
+        }
+        return body;
+      });
+    });
+  }
+
   /* ---- Multi-step estimate form ---- */
   var form = document.getElementById('estimateForm');
   if (form) {
@@ -59,6 +77,7 @@
     var bars = Array.prototype.slice.call(document.querySelectorAll('.progress .bar'));
     var current = 0;
     var success = document.getElementById('formSuccess');
+    var estimateError = document.getElementById('estimateError');
 
     function showStep(i) {
       steps.forEach(function (s, idx) { s.classList.toggle('active', idx === i); });
@@ -107,10 +126,71 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (!validateStep(current)) return;
-      form.style.display = 'none';
-      if (success) success.classList.add('show');
-      var prog = document.querySelector('.progress');
-      if (prog) prog.style.display = 'none';
+
+      var submitBtn = form.querySelector('button[type="submit"]');
+      var fd = new FormData(form);
+      var payload = { form_type: 'Estimate Request' };
+      fd.forEach(function (value, key) { payload[key] = value; });
+      // Photos can't ride along in JSON; record how many the customer selected.
+      if (fileInput && fileInput.files.length) {
+        payload.photo_count = String(fileInput.files.length) +
+          ' selected (ask customer to send photos)';
+      }
+
+      if (estimateError) { estimateError.style.display = 'none'; estimateError.textContent = ''; }
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Sending…'; }
+
+      submitLead(payload).then(function () {
+        form.style.display = 'none';
+        if (success) success.classList.add('show');
+        var prog = document.querySelector('.progress');
+        if (prog) prog.style.display = 'none';
+      }).catch(function (err) {
+        if (estimateError) {
+          estimateError.textContent = err.message +
+            ' You can also call Showtime at 909.867.7025.';
+          estimateError.style.display = 'block';
+        }
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Send My Estimate Request'; }
+      });
+    });
+  }
+
+  /* ---- Simple contact form ---- */
+  var contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    var contactMsg = document.getElementById('cmsg');
+    var contactError = document.getElementById('contactError');
+
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var ok = true;
+      contactForm.querySelectorAll('[required]').forEach(function (f) {
+        if (!f.value.trim()) { ok = false; f.style.borderColor = '#DA0020'; }
+        else { f.style.borderColor = ''; }
+      });
+      if (!ok) return;
+
+      var submitBtn = contactForm.querySelector('button[type="submit"]');
+      var fd = new FormData(contactForm);
+      var payload = { form_type: 'Contact Message' };
+      fd.forEach(function (value, key) { payload[key] = value; });
+
+      if (contactError) { contactError.style.display = 'none'; contactError.textContent = ''; }
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Sending…'; }
+
+      submitLead(payload).then(function () {
+        contactForm.style.display = 'none';
+        if (contactMsg) contactMsg.style.display = 'block';
+      }).catch(function (err) {
+        if (contactError) {
+          contactError.textContent = err.message +
+            ' You can also call Showtime at 909.867.7025.';
+          contactError.style.display = 'block';
+        }
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Send Message'; }
+      });
     });
   }
 
