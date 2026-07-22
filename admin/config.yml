@@ -1,0 +1,76 @@
+backend:
+  name: github
+  repo: WilkyProductions/Showtime
+  branch: main
+
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+collections:
+  - name: "pages"
+    label: "Website Content"
+    files:
+      - file: "content/index.json"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Hero Headline", name: "hero_headline", widget: "string", hint: "Main heading — contains a <span> tag, edit carefully" }
+          - { label: "Hero Subtext", name: "hero_subtext", widget: "text" }
+
+          - { label: "\"What does Showtime do?\" — Heading", name: "what_we_do_heading", widget: "string" }
+          - { label: "\"What does Showtime do?\" — Text", name: "what_we_do_body", widget: "text" }
+
+          - { label: "Before/After 1 — Before Image", name: "ba1_before_image", widget: "image" }
+          - { label: "Before/After 1 — After Image", name: "ba1_after_image", widget: "image" }
+          - { label: "Before/After 1 — Repair Type", name: "ba1_type", widget: "string" }
+          - { label: "Before/After 1 — Vehicle Title", name: "ba1_title", widget: "string" }
+          - { label: "Before/After 1 — Caption", name: "ba1_caption", widget: "text" }
+
+          - { label: "Before/After 2 — Before Image", name: "ba2_before_image", widget: "image" }
+          - { label: "Before/After 2 — After Image", name: "ba2_after_image", widget: "image" }
+          - { label: "Before/After 2 — Repair Type", name: "ba2_type", widget: "string" }
+          - { label: "Before/After 2 — Vehicle Title", name: "ba2_title", widget: "string" }
+          - { label: "Before/After 2 — Caption", name: "ba2_caption", widget: "text" }
+
+          - { label: "Before/After 3 — Before Image", name: "ba3_before_image", widget: "image" }
+          - { label: "Before/After 3 — After Image", name: "ba3_after_image", widget: "image" }
+          - { label: "Before/After 3 — Repair Type", name: "ba3_type", widget: "string" }
+          - { label: "Before/After 3 — Vehicle Title", name: "ba3_title", widget: "string" }
+          - { label: "Before/After 3 — Caption", name: "ba3_caption", widget: "text" }
+
+          - { label: "Review 1 — Quote", name: "review1_quote", widget: "text" }
+          - { label: "Review 1 — Customer Name", name: "review1_name", widget: "string" }
+          - { label: "Review 1 — Vehicle / Location", name: "review1_vehicle", widget: "string" }
+
+          - { label: "Review 2 — Quote", name: "review2_quote", widget: "text" }
+          - { label: "Review 2 — Customer Name", name: "review2_name", widget: "string" }
+          - { label: "Review 2 — Vehicle / Location", name: "review2_vehicle", widget: "string" }
+
+          - { label: "Review 3 — Quote", name: "review3_quote", widget: "text" }
+          - { label: "Review 3 — Customer Name", name: "review3_name", widget: "string" }
+          - { label: "Review 3 — Vehicle / Location", name: "review3_vehicle", widget: "string" }
+
+          - { label: "Insurance Section — Heading", name: "insurance_answer_heading", widget: "string" }
+          - { label: "Insurance Section — Text", name: "insurance_answer_body", widget: "text" }
+
+          - { label: "Service Area — Heading", name: "location_answer_heading", widget: "string" }
+          - { label: "Service Area — Text", name: "location_answer_body", widget: "text" }
+
+          - { label: "FAQ 1 — Question", name: "faq1_question", widget: "string" }
+          - { label: "FAQ 1 — Answer", name: "faq1_answer", widget: "text" }
+
+          - { label: "FAQ 2 — Question", name: "faq2_question", widget: "string" }
+          - { label: "FAQ 2 — Answer", name: "faq2_answer", widget: "text" }
+
+          - { label: "FAQ 3 — Question", name: "faq3_question", widget: "string" }
+          - { label: "FAQ 3 — Answer", name: "faq3_answer", widget: "text" }
+
+          - { label: "FAQ 4 — Question", name: "faq4_question", widget: "string" }
+          - { label: "FAQ 4 — Answer", name: "faq4_answer", widget: "text" }
+
+          - { label: "FAQ 5 — Question", name: "faq5_question", widget: "string" }
+          - { label: "FAQ 5 — Answer", name: "faq5_answer", widget: "text" }
+
+          - { label: "FAQ 6 — Question", name: "faq6_question", widget: "string" }
+          - { label: "FAQ 6 — Answer", name: "faq6_answer", widget: "text" }

@@ -1,0 +1,62 @@
+{
+  "hero_image": "assets/img/hero-home.webp",
+  "hero_headline": "Collision Repair That Brings Your Vehicle Back to <span class=\"red\">Showtime</span> Condition",
+  "hero_subtext": "From insurance claims to precision paint and body work, Showtime helps you get clear answers, quality repairs, and confidence from estimate to delivery.",
+
+  "what_we_do_heading": "What does Showtime do?",
+  "what_we_do_body": "Showtime provides collision repair, auto body repair, paint repair, bumper repair, dent and scratch repair, and insurance claim repair assistance for drivers in Running Springs, Big Bear, Lake Arrowhead, Crestline, and the surrounding areas.",
+
+  "ba1_before_image": "assets/img/cadillac-before.webp",
+  "ba1_after_image": "assets/img/red-supercar.webp",
+  "ba1_type": "Collision Repair",
+  "ba1_title": "Cadillac CTS",
+  "ba1_caption": "Before and after collision repair example completed by Showtime on a Cadillac CTS, from front-end accident damage back to a finished, polished panel.",
+
+  "ba2_before_image": "assets/img/subaru-damage-front.webp",
+  "ba2_after_image": "assets/img/subaru-finished.webp",
+  "ba2_type": "Collision &amp; Paint Repair",
+  "ba2_title": "2023 Subaru Impreza",
+  "ba2_caption": "Before and after collision repair on a 2023 Subaru Impreza, from arrival with collision damage to a completed repair with matched paint and aligned panels.",
+
+  "ba3_before_image": "assets/img/mustang-before.webp",
+  "ba3_after_image": "assets/img/mustang-after.webp",
+  "ba3_type": "Front-End Collision Repair",
+  "ba3_title": "Ford Mustang GT",
+  "ba3_caption": "Before and after collision repair on a Ford Mustang GT, restoring the front bumper, headlight, and body lines after an accident.",
+
+  "review1_quote": "The customer service was awesome. Just picked up my car and it&rsquo;s absolutely perfect. Showtime knows how to make a happy customer. Excellent service.",
+  "review1_name": "Jodee",
+  "review1_vehicle": "2023 Honda CR-V",
+
+  "review2_quote": "Absolutely outstanding service. Car literally looks better than the day I bought it. Could not be more satisfied.",
+  "review2_name": "Ken",
+  "review2_vehicle": "Lake Arrowhead, CA",
+
+  "review3_quote": "I cannot recommend Showtime Collision highly enough! All repairs to my 2023 Subaru Impreza met and exceeded my expectations. From early on, their attention to detail erased all of my anxiety and made me feel like I was family.",
+  "review3_name": "David",
+  "review3_vehicle": "2023 Subaru Impreza owner",
+
+  "insurance_answer_heading": "Does Showtime help with insurance claims?",
+  "insurance_answer_body": "Yes. If you already have an insurance estimate or claim information, Showtime can review the details, explain the repair process, and help you understand the next step. Have questions about your repair options? Contact Showtime and we&rsquo;ll help you understand the next step.",
+
+  "location_answer_heading": "Where is Showtime located?",
+  "location_answer_body": "Showtime Collision&rsquo;s main facility is in Running Springs, California, and serves drivers in Running Springs, Big Bear, Lake Arrowhead, Crestline, Redlands, Highland, Yucaipa, and the High Desert.",
+
+  "faq1_question": "Can I get an estimate from photos?",
+  "faq1_answer": "Yes. You can send photos for an initial review. Some damage may require in-person inspection or disassembly before a final repair plan can be completed.",
+
+  "faq2_question": "Do I need an appointment?",
+  "faq2_answer": "For the smoothest experience, schedule an estimate or call ahead. Walk-in availability depends on the shop schedule.",
+
+  "faq3_question": "Can you help with an insurance claim?",
+  "faq3_answer": "Yes. If you already have a claim or estimate, send it to Showtime and we&rsquo;ll help you understand the next step in the repair process.",
+
+  "faq4_question": "How long will my repair take?",
+  "faq4_answer": "Repair time depends on damage severity, parts availability, insurance approval, and the repair plan. We&rsquo;ll explain the expected timeline once we review the vehicle.",
+
+  "faq5_question": "Is my vehicle safe to drive after a collision?",
+  "faq5_answer": "Not always. If the vehicle has leaking fluids, warning lights, wheel or suspension damage, airbag deployment, sharp edges, or poor drivability, call before driving it.",
+
+  "faq6_question": "Do you repair luxury or performance vehicles?",
+  "faq6_answer": "Showtime works on a wide range of vehicles, from everyday cars and trucks to sports cars and premium vehicles, with attention to fit, finish, and paint match."
+}
