@@ -4,8 +4,8 @@ backend:
   branch: cms-integration
   base_url: https://decap-cms-oauth-six-sooty.vercel.app
 
-media_folder: "assets/img/uploads"
-public_folder: "/assets/img/uploads"
+media_folder: "assets/img"
+public_folder: "/assets/img"
 
 collections:
   - name: "pages"
