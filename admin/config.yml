@@ -2,7 +2,7 @@ backend:
   name: github
   repo: WilkyProductions/Showtime
   branch: cms-integration
-  base_url: decap-cms-oauth-36qmqjgzi-wilkyproductions-projects.vercel.app
+  base_url: https://decap-cms-oauth-36qmqjgzi-wilkyproductions-projects.vercel.app
 
 media_folder: "assets/img/uploads"
 public_folder: "/assets/img/uploads"
