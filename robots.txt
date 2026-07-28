@@ -7,4 +7,4 @@ Allow: /
 User-agent: GPTBot
 Disallow: /
 
-Sitemap: https://www.showtimecollision.com/sitemap.xml
+Sitemap: https://showtimeautobody.com/sitemap.xml

@@ -1,0 +1,95 @@
+asset,page,alt_text,declared_width,declared_height,loading
+showtime-logo.png,404.html,Showtime Collision,390,141,eager/unspecified
+showtime-logo.png,404.html,Showtime Collision,390,141,eager/unspecified
+showtime-logo.png,404.html,Showtime Collision,390,141,eager/unspecified
+showtime-logo.png,about.html,Showtime Collision,390,141,eager/unspecified
+shop-neon.webp,about.html,Showtime shop interior with illuminated Ford sign,1600,900,eager/unspecified
+lamborghini-finished.webp,about.html,Finished white Lamborghini photographed at Showtime Collision,1200,800,lazy
+technician-trim.webp,about.html,Showtime technician carefully fitting trim to a repaired vehicle,900,1200,lazy
+showtime-logo.png,about.html,Showtime Collision,390,141,eager/unspecified
+showtime-logo.png,contact.html,Showtime Collision,390,141,eager/unspecified
+facility-waiting-room.webp,contact.html,Showtime Collision customer reception and waiting area,1600,900,eager/unspecified
+facility-office-front.webp,contact.html,Showtime Collision front office,1200,800,lazy
+showtime-logo.png,contact.html,Showtime Collision,390,141,eager/unspecified
+showtime-logo.png,facility.html,Showtime Collision,390,141,eager/unspecified
+facility-measuring-floor.webp,facility.html,Showtime Collision structural repair floor with measuring equipment,1600,900,eager/unspecified
+facility-main-floor.webp,facility.html,Clean main repair floor at Showtime Collision,1600,1100,lazy
+facility-measuring-floor.webp,facility.html,Structural measuring and repair floor,1200,800,lazy
+facility-aluminum-room.webp,facility.html,Dedicated aluminum work area,1200,800,lazy
+facility-spray-booth.webp,facility.html,Controlled refinishing booth,1200,800,lazy
+facility-paint-mixing.webp,facility.html,PPG paint mixing room,1200,800,lazy
+facility-paint-prep.webp,facility.html,Paint preparation area,1200,800,lazy
+facility-prospot.webp,facility.html,OEM-oriented welding equipment,1200,800,lazy
+facility-frame-rack.webp,facility.html,Frame and unibody repair equipment,1200,800,lazy
+facility-office-front.webp,facility.html,Customer reception,1200,800,lazy
+vehicle-in-booth.webp,facility.html,Vehicle masked and positioned in the Showtime spray booth,1200,1200,lazy
+facility-waiting-room.webp,facility.html,Showtime customer waiting area,1200,800,lazy
+facility-office-front.webp,facility.html,Showtime front office and reception,1200,800,lazy
+showtime-logo.png,facility.html,Showtime Collision,390,141,eager/unspecified
+showtime-logo.png,index.html,Showtime Collision,390,141,eager/unspecified
+home-hero-r8.webp,index.html,Completed blue Audi R8 outside the Showtime Collision repair campus,1800,900,eager/unspecified
+technician-detail.webp,index.html,Showtime technician carefully refinishing a headlight,1000,1000,lazy
+subaru-structural.webp,index.html,Vehicle undergoing structural repair inside the Showtime shop,1500,1100,lazy
+facility-measuring-floor.webp,index.html,Showtime Collision structural repair and measuring equipment at the Running Springs facility,1600,900,lazy
+subaru-after.webp,index.html,Black Subaru after collision repair,1400,1050,lazy
+subaru-before.webp,index.html,Black Subaru before collision repair,1400,1050,lazy
+facility-measuring-floor.webp,index.html,Showtime structural measuring and repair floor,1600,1100,lazy
+facility-spray-booth.webp,index.html,Showtime controlled spray booth,1600,1100,lazy
+facility-paint-mixing.webp,index.html,Showtime PPG paint mixing room,1600,1100,lazy
+facility-office-front.webp,index.html,Showtime collision repair service for Running Springs,900,700,lazy
+blue-subaru-finished.webp,index.html,Showtime collision repair service for Big Bear,900,700,lazy
+cadillac-after.webp,index.html,Showtime collision repair service for Lake Arrowhead,900,700,lazy
+ford-truck-facility.webp,index.html,Showtime collision repair service for Crestline,900,700,lazy
+showtime-logo.png,index.html,Showtime Collision,390,141,eager/unspecified
+showtime-logo.png,insurance.html,Showtime Collision,390,141,eager/unspecified
+technician-part.webp,insurance.html,Showtime technician inspecting a vehicle component,1600,900,eager/unspecified
+subaru-structural.webp,insurance.html,Collision repair blueprint and structural work in progress,1500,1100,lazy
+showtime-logo.png,insurance.html,Showtime Collision,390,141,eager/unspecified
+showtime-logo.png,location-big-bear.html,Showtime Collision,390,141,eager/unspecified
+big-bear-satellite-hero.webp,location-big-bear.html,Completed black Subaru at Showtime Collision in the mountain community,1600,900,eager/unspecified
+facility-measuring-floor.webp,location-big-bear.html,Showtime structural measuring and repair equipment in Running Springs,1600,1100,lazy
+big-bear-result.webp,location-big-bear.html,Big Bear customer vehicle before and after collision repair,1400,800,lazy
+showtime-logo.png,location-big-bear.html,Showtime Collision,390,141,eager/unspecified
+showtime-logo.png,location-crestline.html,Showtime Collision,390,141,eager/unspecified
+ford-truck-facility.webp,location-crestline.html,Completed Ford truck outside Showtime Collision in the mountains,1600,900,eager/unspecified
+jodee-review-card.webp,location-crestline.html,Collision repair result connected to Crestline,1400,800,lazy
+showtime-logo.png,location-crestline.html,Showtime Collision,390,141,eager/unspecified
+showtime-logo.png,location-lake-arrowhead.html,Showtime Collision,390,141,eager/unspecified
+cadillac-after.webp,location-lake-arrowhead.html,Lake Arrowhead customer vehicle before and after body repair,1600,900,eager/unspecified
+lake-arrowhead-result.webp,location-lake-arrowhead.html,Collision repair result connected to Lake Arrowhead,1400,800,lazy
+showtime-logo.png,location-lake-arrowhead.html,Showtime Collision,390,141,eager/unspecified
+showtime-logo.png,location-running-springs.html,Showtime Collision,390,141,eager/unspecified
+facility-office-front.webp,location-running-springs.html,Showtime Collision customer office in Running Springs,1600,900,eager/unspecified
+david-review-card.webp,location-running-springs.html,Collision repair result connected to Running Springs,1400,800,lazy
+showtime-logo.png,location-running-springs.html,Showtime Collision,390,141,eager/unspecified
+showtime-logo.png,locations.html,Showtime Collision,390,141,eager/unspecified
+ford-truck-facility.webp,locations.html,Ford truck in front of the Showtime Collision facility in Running Springs,1600,900,eager/unspecified
+facility-office-front.webp,locations.html,Showtime collision repair service for Running Springs,900,700,lazy
+blue-subaru-finished.webp,locations.html,Showtime collision repair service for Big Bear,900,700,lazy
+cadillac-after.webp,locations.html,Showtime collision repair service for Lake Arrowhead,900,700,lazy
+ford-truck-facility.webp,locations.html,Showtime collision repair service for Crestline,900,700,lazy
+lake-arrowhead-result.webp,locations.html,Before and after repair for a Lake Arrowhead customer,1400,600,lazy
+showtime-logo.png,locations.html,Showtime Collision,390,141,eager/unspecified
+showtime-logo.png,oem-certifications.html,Showtime Collision,390,141,eager/unspecified
+facility-main-floor.webp,oem-certifications.html,Showtime Collision structural repair and measuring facility in Running Springs,1600,900,eager/unspecified
+subaru-structural.webp,oem-certifications.html,Subaru undergoing structural repair inside Showtime Collision,1600,1200,lazy
+showtime-logo.png,oem-certifications.html,Showtime Collision,390,141,eager/unspecified
+showtime-logo.png,results.html,Showtime Collision,390,141,eager/unspecified
+audi-after.webp,results.html,Finished blue Audi at Showtime Collision,1600,900,eager/unspecified
+subaru-after.webp,results.html,Black Subaru after repair,1400,1050,lazy
+subaru-before.webp,results.html,Black Subaru before repair,1400,1050,lazy
+cadillac-after.webp,results.html,Red Cadillac after repair,1000,1000,lazy
+cadillac-before.webp,results.html,Red Cadillac before repair,1000,800,lazy
+lake-arrowhead-result.webp,results.html,Lake Arrowhead customer vehicle before and after repair,1400,600,lazy
+audi-before.webp,results.html,Blue Audi before body repair,1000,1000,lazy
+audi-after.webp,results.html,Blue Audi after body repair,1400,1400,lazy
+big-bear-result.webp,results.html,Big Bear customer vehicle before and after repair,1200,650,lazy
+blue-subaru-progress.webp,results.html,Blue Subaru during repair,1200,1200,lazy
+blue-subaru-finished.webp,results.html,Blue Subaru after repair,1000,1000,lazy
+david-review-card.webp,results.html,"Verified review from David, a Subaru owner",1200,800,lazy
+showtime-logo.png,results.html,Showtime Collision,390,141,eager/unspecified
+showtime-logo.png,services.html,Showtime Collision,390,141,eager/unspecified
+subaru-structural.webp,services.html,Vehicle undergoing structural repair inside Showtime Collision,1600,900,eager/unspecified
+blue-subaru-progress.webp,services.html,Subaru repair in progress,1200,1200,lazy
+paint-detail.webp,services.html,Close-up of a freshly refinished blue vehicle panel,1200,1200,lazy
+showtime-logo.png,services.html,Showtime Collision,390,141,eager/unspecified

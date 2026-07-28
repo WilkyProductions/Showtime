@@ -1,0 +1,17 @@
+{
+  "hero_image": "assets/images/technician-part.webp",
+  "hero_headline": "You choose the shop. We help make the process <span>clearer.</span>",
+  "hero_lead": "Bring your insurance estimate, claim information, and vehicle photos. Showtime can help explain the repair process, hidden damage, supplements, and next steps.",
+
+  "faq1_question": "Can my insurer require a specific body shop?",
+  "faq1_answer": "You generally retain the right to choose your repair facility. Your insurer may recommend network shops, but you can ask Showtime to review your estimate and options.",
+
+  "faq2_question": "Why can the estimate change after repairs begin?",
+  "faq2_answer": "Some damage is hidden behind bumpers, trim, panels, or interior components. Scans, measurements, and manufacturer procedures may also reveal required operations that were not visible initially.",
+
+  "faq3_question": "Will Showtime communicate with the insurer?",
+  "faq3_answer": "Showtime works with major carriers and can document repair needs, submit supplements, and communicate about the repair process.",
+
+  "faq4_question": "Does the photo estimate replace an in-person inspection?",
+  "faq4_answer": "No. It is a convenient intake and preliminary review tool. A complete plan may require the vehicle at the shop."
+}

@@ -1,0 +1,98 @@
+{
+  "hero_image": "assets/images/facility-main-floor.webp",
+  "hero_headline": "Certified for <span>17 vehicle makes.</span>",
+  "hero_lead": "Manufacturer certification coverage for 17 vehicle makes, supported through Showtime's complete Running Springs production facility&mdash;with every credential and covered make named clearly.",
+
+  "programs": [
+    {
+      "number": "01",
+      "count_label": "1 make",
+      "kicker": "Subaru Certified Collision Center",
+      "title": "Subaru",
+      "make_tags": "<span>Subaru</span>",
+      "description": "Subaru Certified Collision Center coverage for Subaru vehicles at the Running Springs production facility.",
+      "card_class": "",
+      "wrap_a_open": "", "wrap_a_close": "", "wrap_b_open": "", "wrap_b_close": ""
+    },
+    {
+      "number": "02",
+      "count_label": "1 make",
+      "kicker": "Ford Certified Collision Network",
+      "title": "Ford",
+      "make_tags": "<span>Ford</span>",
+      "description": "Ford Certified Collision Network coverage for Ford vehicles, supported by the shop&rsquo;s structural and refinishing capabilities.",
+      "card_class": "",
+      "wrap_a_open": "", "wrap_a_close": "", "wrap_b_open": "", "wrap_b_close": ""
+    },
+    {
+      "number": "03",
+      "count_label": "2 makes",
+      "kicker": "Honda and Acura Certified Collision",
+      "title": "Honda &amp; Acura",
+      "make_tags": "<span>Honda</span><span>Acura</span>",
+      "description": "Honda and Acura Certified Collision coverage for both Honda and Acura vehicles.",
+      "card_class": "",
+      "wrap_a_open": "", "wrap_a_close": "", "wrap_b_open": "", "wrap_b_close": ""
+    },
+    {
+      "number": "04",
+      "count_label": "1 make",
+      "kicker": "Nissan Certified Collision Repair Network",
+      "title": "Nissan",
+      "make_tags": "<span>Nissan</span>",
+      "description": "Manufacturer-certified collision repair for Nissan vehicles, supported by Nissan-specific repair information, training, tooling, and program requirements.",
+      "card_class": "",
+      "wrap_a_open": "", "wrap_a_close": "", "wrap_b_open": "", "wrap_b_close": ""
+    },
+    {
+      "number": "05",
+      "count_label": "1 make",
+      "kicker": "INFINITI Certified Collision Repair Network",
+      "title": "INFINITI",
+      "make_tags": "<span>INFINITI</span>",
+      "description": "Manufacturer-certified collision repair for INFINITI vehicles through the dedicated INFINITI collision-repair network.",
+      "card_class": "",
+      "wrap_a_open": "", "wrap_a_close": "", "wrap_b_open": "", "wrap_b_close": ""
+    },
+    {
+      "number": "06",
+      "count_label": "1 make",
+      "kicker": "Hyundai Certified Collision Repair Network",
+      "title": "Hyundai",
+      "make_tags": "<span>Hyundai</span>",
+      "description": "Manufacturer-certified collision repair for Hyundai vehicles through Hyundai's certified repair network.",
+      "card_class": "",
+      "wrap_a_open": "", "wrap_a_close": "", "wrap_b_open": "", "wrap_b_close": ""
+    },
+    {
+      "number": "07",
+      "count_label": "1 make",
+      "kicker": "Kia Certified Collision Repair",
+      "title": "Kia",
+      "make_tags": "<span>Kia</span>",
+      "description": "Kia Certified Collision Repair coverage for Kia vehicles at the Running Springs production facility.",
+      "card_class": "",
+      "wrap_a_open": "", "wrap_a_close": "", "wrap_b_open": "", "wrap_b_close": ""
+    },
+    {
+      "number": "08",
+      "count_label": "5 makes",
+      "kicker": "Mopar Certified Collision Network",
+      "title": "Chrysler Family",
+      "make_tags": "<span>Chrysler</span><span>Dodge</span><span>Jeep</span><span>Ram</span><span>FIAT</span>",
+      "description": "Mopar Certified Collision Network coverage for Chrysler, Dodge, Jeep, Ram, and FIAT vehicles.",
+      "card_class": "",
+      "wrap_a_open": "", "wrap_a_close": "", "wrap_b_open": "", "wrap_b_close": ""
+    },
+    {
+      "number": "09",
+      "count_label": "4 makes",
+      "kicker": "GM Collision Repair Network",
+      "title": "General Motors",
+      "make_tags": "<span>Chevrolet</span><span>GMC</span><span>Buick</span><span>Cadillac</span>",
+      "description": "GM Collision Repair Network coverage for Chevrolet, GMC, Buick, and Cadillac vehicles&mdash;with all four GM brands named clearly.",
+      "card_class": "featured",
+      "wrap_a_open": "<div>", "wrap_a_close": "</div>", "wrap_b_open": "<div>", "wrap_b_close": "</div>"
+    }
+  ]
+}

@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.showtimecollision.com/</loc><lastmod>2025-01-15</lastmod><priority>1.0</priority></url>
-  <url><loc>https://www.showtimecollision.com/services.html</loc><lastmod>2025-01-15</lastmod><priority>0.9</priority></url>
-  <url><loc>https://www.showtimecollision.com/collision-repair.html</loc><lastmod>2025-01-15</lastmod><priority>0.9</priority></url>
-  <url><loc>https://www.showtimecollision.com/auto-body-repair.html</loc><lastmod>2025-01-15</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.showtimecollision.com/auto-paint-repair.html</loc><lastmod>2025-01-15</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.showtimecollision.com/bumper-repair.html</loc><lastmod>2025-01-15</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.showtimecollision.com/dent-scratch-repair.html</loc><lastmod>2025-01-15</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.showtimecollision.com/insurance-claim-help.html</loc><lastmod>2025-01-15</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.showtimecollision.com/oem-certified-repair.html</loc><lastmod>2025-01-15</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.showtimecollision.com/estimate.html</loc><lastmod>2025-01-15</lastmod><priority>0.9</priority></url>
-  <url><loc>https://www.showtimecollision.com/before-after.html</loc><lastmod>2025-01-15</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.showtimecollision.com/reviews.html</loc><lastmod>2025-01-15</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.showtimecollision.com/about.html</loc><lastmod>2025-01-15</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.showtimecollision.com/contact.html</loc><lastmod>2025-01-15</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.showtimecollision.com/resources.html</loc><lastmod>2025-01-15</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.showtimecollision.com/privacy.html</loc><lastmod>2025-01-15</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.showtimecollision.com/accessibility.html</loc><lastmod>2025-01-15</lastmod><priority>0.7</priority></url>
+  <url><loc>https://showtimeautobody.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://showtimeautobody.com/services.html</loc><priority>0.8</priority></url>
+  <url><loc>https://showtimeautobody.com/locations.html</loc><priority>0.9</priority></url>
+  <url><loc>https://showtimeautobody.com/location-running-springs.html</loc><priority>0.8</priority></url>
+  <url><loc>https://showtimeautobody.com/location-big-bear.html</loc><priority>0.8</priority></url>
+  <url><loc>https://showtimeautobody.com/location-lake-arrowhead.html</loc><priority>0.8</priority></url>
+  <url><loc>https://showtimeautobody.com/location-crestline.html</loc><priority>0.8</priority></url>
+  <url><loc>https://showtimeautobody.com/facility.html</loc><priority>0.8</priority></url>
+  <url><loc>https://showtimeautobody.com/oem-certifications.html</loc><priority>0.9</priority></url>
+  <url><loc>https://showtimeautobody.com/results.html</loc><priority>0.9</priority></url>
+  <url><loc>https://showtimeautobody.com/insurance.html</loc><priority>0.8</priority></url>
+  <url><loc>https://showtimeautobody.com/about.html</loc><priority>0.8</priority></url>
+  <url><loc>https://showtimeautobody.com/contact.html</loc><priority>0.8</priority></url>
+  <url><loc>https://showtimeautobody.com/privacy.html</loc><priority>0.3</priority></url>
 </urlset>

@@ -1,0 +1,21 @@
+{
+  "hero_image": "assets/images/ford-truck-facility.webp",
+  "hero_headline": "Collision Repair Serving <span>Crestline.</span>",
+  "hero_lead": "Collision repair serving Crestline, CA. Start with a mobile photo estimate, get insurance guidance, and plan repair at Showtime Collision in Running Springs.",
+
+  "review_quote": "The customer service was awesome. Just picked up my car and it&rsquo;s absolutely perfect. Showtime knows how to make a happy customer.",
+  "review_name": "Jodee",
+  "review_vehicle": "2023 Honda CR-V",
+
+  "faq1_question": "Can Crestline customers submit an online estimate?",
+  "faq1_answer": "Yes. Open the Carwise link on a mobile phone and follow the guided photo prompts.",
+
+  "faq2_question": "How far along is the price from photos?",
+  "faq2_answer": "Photo review is preliminary. Hidden damage, scans, measurements, and disassembly may be required for a complete repair plan.",
+
+  "faq3_question": "Can I choose Showtime even if my insurer recommends another shop?",
+  "faq3_answer": "Customers generally have the right to choose their repair facility. Ask Showtime to review the estimate and explain the process.",
+
+  "faq4_question": "What should I do if warning lights are on after the accident?",
+  "faq4_answer": "Call before driving. Warning lights can indicate safety, restraint, suspension, cooling, or electronic-system concerns."
+}

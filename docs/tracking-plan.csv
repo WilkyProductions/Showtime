@@ -1,0 +1,7 @@
+event_name,trigger,selector_or_rule,parameters,business_value,implementation_status
+estimate_click,Click any Carwise photo-estimate CTA,"[data-track=""estimate_click""]","link_url, link_text, page_path",Primary lead action,Implemented hook; connect in GTM/GA4/Google Ads
+phone_click,Click a tel: link,"[data-track=""phone_click""]","link_url, link_text, page_path",Primary lead action,Implemented hook
+directions_click,Click a directions link,"[data-track=""directions_click""]","link_url, link_text, page_path",High-intent action,Implemented hook
+review_profile_click,Click external review profile,"[data-track=""review_profile_click""]","link_url, link_text, page_path",Trust engagement,Implemented hook
+oem_page_view,View /oem-certifications/,Page-view rule,"page_path, source, campaign",Consider secondary conversion,Configure in analytics
+location_page_view,View any location page,Path starts /locations/,"page_path, location_name",Attribution dimension,Configure in analytics

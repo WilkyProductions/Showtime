@@ -4,8 +4,8 @@ backend:
   branch: cms-integration
   base_url: https://decap-cms-oauth-six-sooty.vercel.app
 
-media_folder: "assets/img"
-public_folder: "/assets/img"
+media_folder: "assets/images"
+public_folder: "/assets/images"
 
 collections:
   - name: "pages"
@@ -16,29 +16,9 @@ collections:
         name: "home"
         fields:
           - { label: "Hero Image", name: "hero_image", widget: "image" }
-          - { label: "Hero Headline", name: "hero_headline", widget: "string", hint: "Main heading — contains a <span> tag, edit carefully" }
-          - { label: "Hero Subtext", name: "hero_subtext", widget: "text" }
-
-          - { label: "\"What does Showtime do?\" — Heading", name: "what_we_do_heading", widget: "string" }
-          - { label: "\"What does Showtime do?\" — Text", name: "what_we_do_body", widget: "text" }
-
-          - { label: "Before/After 1 — Before Image", name: "ba1_before_image", widget: "image" }
-          - { label: "Before/After 1 — After Image", name: "ba1_after_image", widget: "image" }
-          - { label: "Before/After 1 — Repair Type", name: "ba1_type", widget: "string" }
-          - { label: "Before/After 1 — Vehicle Title", name: "ba1_title", widget: "string" }
-          - { label: "Before/After 1 — Caption", name: "ba1_caption", widget: "text" }
-
-          - { label: "Before/After 2 — Before Image", name: "ba2_before_image", widget: "image" }
-          - { label: "Before/After 2 — After Image", name: "ba2_after_image", widget: "image" }
-          - { label: "Before/After 2 — Repair Type", name: "ba2_type", widget: "string" }
-          - { label: "Before/After 2 — Vehicle Title", name: "ba2_title", widget: "string" }
-          - { label: "Before/After 2 — Caption", name: "ba2_caption", widget: "text" }
-
-          - { label: "Before/After 3 — Before Image", name: "ba3_before_image", widget: "image" }
-          - { label: "Before/After 3 — After Image", name: "ba3_after_image", widget: "image" }
-          - { label: "Before/After 3 — Repair Type", name: "ba3_type", widget: "string" }
-          - { label: "Before/After 3 — Vehicle Title", name: "ba3_title", widget: "string" }
-          - { label: "Before/After 3 — Caption", name: "ba3_caption", widget: "text" }
+          - { label: "Hero Kicker", name: "hero_kicker", widget: "string" }
+          - { label: "Hero Headline", name: "hero_headline", widget: "string", hint: "Contains a <span> tag around part of the line — edit carefully" }
+          - { label: "Hero Lead Text", name: "hero_lead", widget: "text" }
 
           - { label: "Review 1 — Quote", name: "review1_quote", widget: "text" }
           - { label: "Review 1 — Customer Name", name: "review1_name", widget: "string" }
@@ -52,26 +32,187 @@ collections:
           - { label: "Review 3 — Customer Name", name: "review3_name", widget: "string" }
           - { label: "Review 3 — Vehicle / Location", name: "review3_vehicle", widget: "string" }
 
-          - { label: "Insurance Section — Heading", name: "insurance_answer_heading", widget: "string" }
-          - { label: "Insurance Section — Text", name: "insurance_answer_body", widget: "text" }
-
-          - { label: "Service Area — Heading", name: "location_answer_heading", widget: "string" }
-          - { label: "Service Area — Text", name: "location_answer_body", widget: "text" }
-
           - { label: "FAQ 1 — Question", name: "faq1_question", widget: "string" }
           - { label: "FAQ 1 — Answer", name: "faq1_answer", widget: "text" }
-
           - { label: "FAQ 2 — Question", name: "faq2_question", widget: "string" }
           - { label: "FAQ 2 — Answer", name: "faq2_answer", widget: "text" }
-
           - { label: "FAQ 3 — Question", name: "faq3_question", widget: "string" }
           - { label: "FAQ 3 — Answer", name: "faq3_answer", widget: "text" }
+          - { label: "FAQ 4 — Question", name: "faq4_question", widget: "string" }
+          - { label: "FAQ 4 — Answer", name: "faq4_answer", widget: "text" }
+          - { label: "FAQ 5 — Question", name: "faq5_question", widget: "string" }
+          - { label: "FAQ 5 — Answer", name: "faq5_answer", widget: "text" }
+          - { label: "FAQ 6 — Question", name: "faq6_question", widget: "string" }
+          - { label: "FAQ 6 — Answer", name: "faq6_answer", widget: "text" }
 
+      - file: "content/services.json"
+        label: "Services Page"
+        name: "services"
+        fields:
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Hero Headline", name: "hero_headline", widget: "string", hint: "Contains a <span> tag around part of the line — edit carefully" }
+          - { label: "Hero Lead Text", name: "hero_lead", widget: "text" }
+
+      - file: "content/locations.json"
+        label: "Locations Page (hub)"
+        name: "locations"
+        fields:
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Hero Headline", name: "hero_headline", widget: "string", hint: "Contains a <span> tag around part of the line — edit carefully" }
+          - { label: "Hero Lead Text", name: "hero_lead", widget: "text" }
+
+      - file: "content/location-running-springs.json"
+        label: "Location — Running Springs"
+        name: "location-running-springs"
+        fields:
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Hero Headline", name: "hero_headline", widget: "string", hint: "Contains a <span> tag around part of the line — edit carefully" }
+          - { label: "Hero Lead Text", name: "hero_lead", widget: "text" }
+          - { label: "Review — Quote", name: "review_quote", widget: "text" }
+          - { label: "Review — Customer Name", name: "review_name", widget: "string" }
+          - { label: "Review — Vehicle / Location", name: "review_vehicle", widget: "string" }
+          - { label: "FAQ 1 — Question", name: "faq1_question", widget: "string" }
+          - { label: "FAQ 1 — Answer", name: "faq1_answer", widget: "text" }
+          - { label: "FAQ 2 — Question", name: "faq2_question", widget: "string" }
+          - { label: "FAQ 2 — Answer", name: "faq2_answer", widget: "text" }
+          - { label: "FAQ 3 — Question", name: "faq3_question", widget: "string" }
+          - { label: "FAQ 3 — Answer", name: "faq3_answer", widget: "text" }
           - { label: "FAQ 4 — Question", name: "faq4_question", widget: "string" }
           - { label: "FAQ 4 — Answer", name: "faq4_answer", widget: "text" }
 
+      - file: "content/location-big-bear.json"
+        label: "Location — Big Bear"
+        name: "location-big-bear"
+        fields:
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Hero Headline", name: "hero_headline", widget: "string", hint: "Contains a <span> tag around part of the line — edit carefully" }
+          - { label: "Hero Lead Text", name: "hero_lead", widget: "text" }
+          - { label: "Review — Quote", name: "review_quote", widget: "text" }
+          - { label: "Review — Customer Name", name: "review_name", widget: "string" }
+          - { label: "Review — Vehicle / Location", name: "review_vehicle", widget: "string" }
+          - { label: "FAQ 1 — Question", name: "faq1_question", widget: "string" }
+          - { label: "FAQ 1 — Answer", name: "faq1_answer", widget: "text" }
+          - { label: "FAQ 2 — Question", name: "faq2_question", widget: "string" }
+          - { label: "FAQ 2 — Answer", name: "faq2_answer", widget: "text" }
+          - { label: "FAQ 3 — Question", name: "faq3_question", widget: "string" }
+          - { label: "FAQ 3 — Answer", name: "faq3_answer", widget: "text" }
+          - { label: "FAQ 4 — Question", name: "faq4_question", widget: "string" }
+          - { label: "FAQ 4 — Answer", name: "faq4_answer", widget: "text" }
           - { label: "FAQ 5 — Question", name: "faq5_question", widget: "string" }
           - { label: "FAQ 5 — Answer", name: "faq5_answer", widget: "text" }
 
-          - { label: "FAQ 6 — Question", name: "faq6_question", widget: "string" }
-          - { label: "FAQ 6 — Answer", name: "faq6_answer", widget: "text" }
+      - file: "content/location-lake-arrowhead.json"
+        label: "Location — Lake Arrowhead"
+        name: "location-lake-arrowhead"
+        fields:
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Hero Headline", name: "hero_headline", widget: "string", hint: "Contains a <span> tag around part of the line — edit carefully" }
+          - { label: "Hero Lead Text", name: "hero_lead", widget: "text" }
+          - { label: "Review — Quote", name: "review_quote", widget: "text" }
+          - { label: "Review — Customer Name", name: "review_name", widget: "string" }
+          - { label: "Review — Vehicle / Location", name: "review_vehicle", widget: "string" }
+          - { label: "FAQ 1 — Question", name: "faq1_question", widget: "string" }
+          - { label: "FAQ 1 — Answer", name: "faq1_answer", widget: "text" }
+          - { label: "FAQ 2 — Question", name: "faq2_question", widget: "string" }
+          - { label: "FAQ 2 — Answer", name: "faq2_answer", widget: "text" }
+          - { label: "FAQ 3 — Question", name: "faq3_question", widget: "string" }
+          - { label: "FAQ 3 — Answer", name: "faq3_answer", widget: "text" }
+          - { label: "FAQ 4 — Question", name: "faq4_question", widget: "string" }
+          - { label: "FAQ 4 — Answer", name: "faq4_answer", widget: "text" }
+
+      - file: "content/location-crestline.json"
+        label: "Location — Crestline"
+        name: "location-crestline"
+        fields:
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Hero Headline", name: "hero_headline", widget: "string", hint: "Contains a <span> tag around part of the line — edit carefully" }
+          - { label: "Hero Lead Text", name: "hero_lead", widget: "text" }
+          - { label: "Review — Quote", name: "review_quote", widget: "text" }
+          - { label: "Review — Customer Name", name: "review_name", widget: "string" }
+          - { label: "Review — Vehicle / Location", name: "review_vehicle", widget: "string" }
+          - { label: "FAQ 1 — Question", name: "faq1_question", widget: "string" }
+          - { label: "FAQ 1 — Answer", name: "faq1_answer", widget: "text" }
+          - { label: "FAQ 2 — Question", name: "faq2_question", widget: "string" }
+          - { label: "FAQ 2 — Answer", name: "faq2_answer", widget: "text" }
+          - { label: "FAQ 3 — Question", name: "faq3_question", widget: "string" }
+          - { label: "FAQ 3 — Answer", name: "faq3_answer", widget: "text" }
+          - { label: "FAQ 4 — Question", name: "faq4_question", widget: "string" }
+          - { label: "FAQ 4 — Answer", name: "faq4_answer", widget: "text" }
+
+      - file: "content/facility.json"
+        label: "Facility Page"
+        name: "facility"
+        fields:
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Hero Headline", name: "hero_headline", widget: "string", hint: "Contains a <span> tag around part of the line — edit carefully" }
+          - { label: "Hero Lead Text", name: "hero_lead", widget: "text" }
+
+      - file: "content/oem-certifications.json"
+        label: "OEM Certifications Page"
+        name: "oem-certifications"
+        fields:
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Hero Headline", name: "hero_headline", widget: "string", hint: "Contains a <span> tag around part of the line — edit carefully" }
+          - { label: "Hero Lead Text", name: "hero_lead", widget: "text" }
+          - label: "Certification Programs"
+            name: "programs"
+            widget: "list"
+            hint: "Verify each program's exact name, covered makes, and status before launch — see docs/LAUNCH-BLOCKERS.md"
+            fields:
+              - { label: "Order Number (e.g. 01)", name: "number", widget: "string" }
+              - { label: "Make Count Label (e.g. 1 make / 4 makes)", name: "count_label", widget: "string" }
+              - { label: "Program Name (kicker)", name: "kicker", widget: "string" }
+              - { label: "Title (short)", name: "title", widget: "string" }
+              - { label: "Make Tags", name: "make_tags", widget: "string", hint: "One <span>Make</span> per covered make, e.g. <span>Honda</span><span>Acura</span>" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Card Class", name: "card_class", widget: "hidden", default: "" }
+              - { label: "Wrap A Open", name: "wrap_a_open", widget: "hidden", default: "" }
+              - { label: "Wrap A Close", name: "wrap_a_close", widget: "hidden", default: "" }
+              - { label: "Wrap B Open", name: "wrap_b_open", widget: "hidden", default: "" }
+              - { label: "Wrap B Close", name: "wrap_b_close", widget: "hidden", default: "" }
+
+      - file: "content/results.json"
+        label: "Results Page"
+        name: "results"
+        fields:
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Hero Headline", name: "hero_headline", widget: "string", hint: "Contains a <span> tag around part of the line — edit carefully" }
+          - { label: "Hero Lead Text", name: "hero_lead", widget: "text" }
+          - { label: "Review — Quote", name: "review_quote", widget: "text" }
+          - { label: "Review — Customer Name", name: "review_name", widget: "string" }
+          - { label: "Review — Vehicle / Location", name: "review_vehicle", widget: "string" }
+
+      - file: "content/insurance.json"
+        label: "Insurance Help Page"
+        name: "insurance"
+        fields:
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Hero Headline", name: "hero_headline", widget: "string", hint: "Contains a <span> tag around part of the line — edit carefully" }
+          - { label: "Hero Lead Text", name: "hero_lead", widget: "text" }
+          - { label: "FAQ 1 — Question", name: "faq1_question", widget: "string" }
+          - { label: "FAQ 1 — Answer", name: "faq1_answer", widget: "text" }
+          - { label: "FAQ 2 — Question", name: "faq2_question", widget: "string" }
+          - { label: "FAQ 2 — Answer", name: "faq2_answer", widget: "text" }
+          - { label: "FAQ 3 — Question", name: "faq3_question", widget: "string" }
+          - { label: "FAQ 3 — Answer", name: "faq3_answer", widget: "text" }
+          - { label: "FAQ 4 — Question", name: "faq4_question", widget: "string" }
+          - { label: "FAQ 4 — Answer", name: "faq4_answer", widget: "text" }
+
+      - file: "content/about.json"
+        label: "About Page"
+        name: "about"
+        fields:
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Hero Headline", name: "hero_headline", widget: "string", hint: "Contains a <span> tag around part of the line — edit carefully" }
+          - { label: "Hero Lead Text", name: "hero_lead", widget: "text" }
+          - { label: "Story — Lead Paragraph", name: "story_lead", widget: "text" }
+          - { label: "Story — Paragraph 2", name: "story_body1", widget: "text" }
+          - { label: "Story — Paragraph 3", name: "story_body2", widget: "text" }
+
+      - file: "content/contact.json"
+        label: "Contact Page"
+        name: "contact"
+        fields:
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Hero Headline", name: "hero_headline", widget: "string", hint: "Contains a <span> tag around part of the line — edit carefully" }
+          - { label: "Hero Lead Text", name: "hero_lead", widget: "text" }

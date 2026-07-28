@@ -26,6 +26,27 @@ function toSchemaSafeText(value) {
     .replace(/"/g, '\\"');    // escape quotes for valid JSON-LD string
 }
 
+// Expands {{#each fieldName}}...{{this.prop}}...{{/each}} blocks against an
+// array field in the content JSON, so repeatable lists (e.g. OEM programs)
+// can be driven from structured data instead of hand-flattened tokens.
+function renderEachBlocks(html, content) {
+  const eachRegex = /{{#each\s+(\w+)}}([\s\S]*?){{\/each}}/g;
+  return html.replace(eachRegex, (match, fieldName, block) => {
+    const items = content[fieldName];
+    if (!Array.isArray(items)) return "";
+    return items
+      .map(item => {
+        let itemHtml = block;
+        for (const [key, value] of Object.entries(item)) {
+          const token = new RegExp(`{{\\s*this\\.${key}\\s*}}`, "g");
+          itemHtml = itemHtml.replace(token, value);
+        }
+        return itemHtml;
+      })
+      .join("");
+  });
+}
+
 function build() {
   const templates = fs.readdirSync(TEMPLATES_DIR).filter(f => f.endsWith(".template.html"));
 
@@ -41,11 +62,14 @@ function build() {
     const content = JSON.parse(fs.readFileSync(jsonPath, "utf8"));
     let html = fs.readFileSync(path.join(TEMPLATES_DIR, templateFile), "utf8");
 
-    // Auto-generate a "_plain" schema-safe variant of every field,
+    html = renderEachBlocks(html, content);
+
+    // Auto-generate a "_plain" schema-safe variant of every string field,
     // so templates can reference {{fieldname_plain}} inside JSON-LD
     // blocks without the client having to maintain two copies.
     const withPlainVariants = { ...content };
     for (const [key, value] of Object.entries(content)) {
+      if (typeof value !== "string") continue;
       withPlainVariants[`${key}_plain`] = toSchemaSafeText(value);
     }
 
