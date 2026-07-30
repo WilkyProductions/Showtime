@@ -67,4 +67,56 @@
       }
     });
   });
+
+  // Cookie consent: default non-essential storage (analytics/ads) to denied
+  // until the visitor chooses, using the Google Consent Mode signal shape so
+  // it's ready for whichever analytics tag gets added later.
+  window.dataLayer = window.dataLayer || [];
+  function gtagConsent() { window.dataLayer.push(arguments); }
+  if (typeof window.gtag !== 'function') { window.gtag = gtagConsent; }
+  window.gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied' });
+
+  const CONSENT_KEY = 'showtime_cookie_consent';
+  const banner = document.querySelector('[data-cookie-consent]');
+
+  function applyConsent(choice) {
+    localStorage.setItem(CONSENT_KEY, choice);
+    window.gtag('consent', 'update', {
+      analytics_storage: choice === 'accepted' ? 'granted' : 'denied',
+      ad_storage: choice === 'accepted' ? 'granted' : 'denied'
+    });
+  }
+
+  function hideBanner() {
+    if (!banner) return;
+    banner.classList.remove('is-visible');
+    window.setTimeout(() => banner.setAttribute('hidden', ''), 300);
+  }
+
+  function showBanner() {
+    if (!banner) return;
+    banner.removeAttribute('hidden');
+    window.requestAnimationFrame(() => banner.classList.add('is-visible'));
+  }
+
+  if (banner) {
+    const stored = localStorage.getItem(CONSENT_KEY);
+    if (stored === 'accepted' || stored === 'declined') {
+      applyConsent(stored);
+    } else {
+      window.setTimeout(showBanner, 600);
+    }
+
+    const acceptBtn = banner.querySelector('[data-cookie-accept]');
+    const declineBtn = banner.querySelector('[data-cookie-decline]');
+    if (acceptBtn) acceptBtn.addEventListener('click', () => { applyConsent('accepted'); hideBanner(); });
+    if (declineBtn) declineBtn.addEventListener('click', () => { applyConsent('declined'); hideBanner(); });
+  }
+
+  document.querySelectorAll('[data-cookie-manage]').forEach((el) => {
+    el.addEventListener('click', (event) => {
+      event.preventDefault();
+      showBanner();
+    });
+  });
 })();
