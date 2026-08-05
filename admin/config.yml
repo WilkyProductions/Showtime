@@ -16,8 +16,7 @@ collections:
         name: "home"
         fields:
           - { label: "Hero Image", name: "hero_image", widget: "image" }
-          - { label: "Hero Kicker", name: "hero_kicker", widget: "string" }
-          - { label: "Hero Headline", name: "hero_headline", widget: "string", hint: "Contains a <span> tag around part of the line — edit carefully" }
+          - { label: "Hero Headline", name: "hero_headline", widget: "string", hint: "Contains a <span> tag around part of the line, edit carefully" }
           - { label: "Hero Lead Text", name: "hero_lead", widget: "text" }
 
           - { label: "Review 1 — Quote", name: "review1_quote", widget: "text" }

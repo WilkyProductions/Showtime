@@ -1,7 +1,7 @@
 {
   "hero_image": "assets/images/facility-main-floor.webp",
   "hero_headline": "Certified for <span>17 vehicle makes.</span>",
-  "hero_lead": "Manufacturer certification coverage for 17 vehicle makes, supported through Showtime's complete Running Springs production facility&mdash;with every credential and covered make named clearly.",
+  "hero_lead": "Manufacturer certification coverage for 17 vehicle makes, supported through Showtime's complete Running Springs production facility, with every credential and covered make named clearly.",
 
   "programs": [
     {
@@ -90,7 +90,7 @@
       "kicker": "GM Collision Repair Network",
       "title": "General Motors",
       "make_tags": "<span>Chevrolet</span><span>GMC</span><span>Buick</span><span>Cadillac</span>",
-      "description": "GM Collision Repair Network coverage for Chevrolet, GMC, Buick, and Cadillac vehicles&mdash;with all four GM brands named clearly.",
+      "description": "GM Collision Repair Network coverage for Chevrolet, GMC, Buick, and Cadillac vehicles, with all four GM brands named clearly.",
       "card_class": "featured",
       "wrap_a_open": "<div>", "wrap_a_close": "</div>", "wrap_b_open": "<div>", "wrap_b_close": "</div>"
     }

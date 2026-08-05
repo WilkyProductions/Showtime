@@ -92,27 +92,10 @@ p { color: var(--gray-600); }
 .lead { font-size: 1.18rem; line-height: 1.7; color: var(--gray-800); }
 .section-dark .lead { color: rgba(255,255,255,.8); }
 
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--red);
-  font-family: var(--font-display);
-  font-size: .8rem;
-  font-weight: 900;
-  font-style: italic;
-  letter-spacing: .16em;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-}
-.eyebrow::before { content: ""; width: 34px; height: 3px; background: currentColor; transform: skewX(-18deg); }
-.eyebrow-light { color: var(--tan); }
-
 .section-heading { max-width: 790px; margin-bottom: 52px; }
 .section-heading h2 { margin-bottom: 18px; }
 .section-heading p { max-width: 700px; margin-bottom: 0; font-size: 1.08rem; }
 .section-heading-center { text-align: center; margin-left: auto; margin-right: auto; }
-.section-heading-center .eyebrow { justify-content: center; }
 .section-heading-center p { margin-left: auto; margin-right: auto; }
 
 .btn {
@@ -242,20 +225,6 @@ p { color: var(--gray-600); }
 .hero-home-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,.96) 0%, rgba(0,0,0,.86) 36%, rgba(0,0,0,.32) 70%, rgba(0,0,0,.12) 100%), linear-gradient(0deg, rgba(0,0,0,.7) 0%, transparent 35%); }
 .hero-home::after { content: ""; position: absolute; left: 0; bottom: 0; width: 45%; height: 9px; background: var(--red); clip-path: polygon(0 0, 100% 0, 96% 100%, 0 100%); }
 .hero-home-content { position: relative; z-index: 2; padding: 80px 0 54px; }
-.hero-kicker {
-  display: inline-flex;
-  align-items: center;
-  gap: 11px;
-  margin-bottom: 22px;
-  color: var(--tan);
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-style: italic;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  font-size: .8rem;
-}
-.hero-kicker::before { content: ""; width: 46px; height: 3px; background: var(--red); transform: skewX(-20deg); }
 .hero-home h1 { max-width: 830px; margin-bottom: 24px; font-size: clamp(4rem, 8.3vw, 8.8rem); }
 .hero-home h1 span, .inner-hero h1 span { color: var(--red); }
 .hero-lead { max-width: 660px; color: rgba(255,255,255,.82); font-size: clamp(1.06rem, 1.6vw, 1.28rem); line-height: 1.65; margin-bottom: 30px; }
