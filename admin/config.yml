@@ -54,7 +54,7 @@ collections:
           - { label: "Hero Lead Text", name: "hero_lead", widget: "text" }
 
       - file: "content/locations.json"
-        label: "Locations Page (hub)"
+        label: "Locations & Facility Page (hub)"
         name: "locations"
         fields:
           - { label: "Hero Image", name: "hero_image", widget: "image" }
@@ -138,14 +138,6 @@ collections:
           - { label: "FAQ 3 — Answer", name: "faq3_answer", widget: "text" }
           - { label: "FAQ 4 — Question", name: "faq4_question", widget: "string" }
           - { label: "FAQ 4 — Answer", name: "faq4_answer", widget: "text" }
-
-      - file: "content/facility.json"
-        label: "Facility Page"
-        name: "facility"
-        fields:
-          - { label: "Hero Image", name: "hero_image", widget: "image" }
-          - { label: "Hero Headline", name: "hero_headline", widget: "string", hint: "Contains a <span> tag around part of the line — edit carefully" }
-          - { label: "Hero Lead Text", name: "hero_lead", widget: "text" }
 
       - file: "content/oem-certifications.json"
         label: "OEM Certifications Page"

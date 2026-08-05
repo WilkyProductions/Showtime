@@ -20,12 +20,11 @@ The Carwise estimate URL is a global setting and should not be hard-coded indepe
 
 - Home
 - Services
-- Locations
+- Locations (includes the facility tour)
   - Running Springs — complete repair/production campus
   - Big Bear — staffed satellite, intake capability, rental cars on site
   - Lake Arrowhead — service area
   - Crestline — service area
-- Facility
 - OEM Certifications
 - Results
 - Insurance
@@ -117,7 +116,7 @@ Create repeatable collections for:
 - Repair results/case studies
 - Reviews
 - FAQs
-- Facility/equipment features
+- Facility/equipment features (part of the Locations page)
 
 ## 10. Performance requirements
 

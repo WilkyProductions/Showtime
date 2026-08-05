@@ -14,6 +14,9 @@
 - Separates physical facilities from service areas.
 - Running Springs and Big Bear have distinct roles.
 - Lake Arrowhead and Crestline do not imply staffed storefronts.
+- Facility tour section explains equipment in customer language.
+- Avoids claiming certification based only on signs visible in photographs.
+- Facility tour includes arrival/check-in, structural, paint, and quality-control areas.
 
 ## Running Springs
 
@@ -31,12 +34,6 @@
 - Contains community-specific logistics and proof.
 - No identical city-name-swapped copy.
 - Primary CTA remains the Carwise estimate.
-
-## Facility
-
-- Explains equipment in customer language.
-- Avoids claiming certification based only on signs visible in photographs.
-- Includes arrival/check-in, structural, paint, and quality-control areas.
 
 ## OEM Certifications
 

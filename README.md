@@ -33,9 +33,9 @@ rendered client-side at request time.
 
 ## Pages
 
-Home, Services, Locations (hub + Running Springs / Big Bear / Lake Arrowhead
-/ Crestline), Facility, OEM Certifications, Results, Insurance, About,
-Contact, plus static `privacy.html` and `404.html`. Routes are flat `.html`
+Home, Services, Locations (hub + facility tour, plus Running Springs / Big
+Bear / Lake Arrowhead / Crestline), OEM Certifications, Results, Insurance,
+About, Contact, plus static `privacy.html` and `404.html`. Routes are flat `.html`
 files (e.g. `/services.html`), matching how the site is actually served —
 see `content/route-map.csv` in the original design handoff for the
 recommended pretty-URL structure if clean routing is added later.

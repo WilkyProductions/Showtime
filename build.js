@@ -6,10 +6,25 @@
 
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 
 const CONTENT_DIR = path.join(__dirname, "content");
 const TEMPLATES_DIR = path.join(__dirname, "templates");
 const OUTPUT_DIR = __dirname;
+const STATIC_PASSTHROUGH_FILES = ["privacy.html", "404.html"];
+
+// Fingerprints styles.css/site.js so every generated page requests the
+// current version, even when a browser (or this project's preview server)
+// would otherwise keep serving a stale cached copy after an edit.
+function fileHash(filePath) {
+  return crypto.createHash("md5").update(fs.readFileSync(filePath)).digest("hex").slice(0, 8);
+}
+
+function applyAssetVersions(html, cssHash, jsHash) {
+  return html
+    .replace(/assets\/css\/styles\.css(?:\?v=[0-9a-f]+)?/g, `assets/css/styles.css?v=${cssHash}`)
+    .replace(/assets\/js\/site\.js(?:\?v=[0-9a-f]+)?/g, `assets/js/site.js?v=${jsHash}`);
+}
 
 // Converts HTML-entity text into plain text safe to embed inside a
 // JSON-LD <script> block (which does NOT get HTML entities decoded
@@ -48,6 +63,9 @@ function renderEachBlocks(html, content) {
 }
 
 function build() {
+  const cssHash = fileHash(path.join(__dirname, "assets/css/styles.css"));
+  const jsHash = fileHash(path.join(__dirname, "assets/js/site.js"));
+
   const templates = fs.readdirSync(TEMPLATES_DIR).filter(f => f.endsWith(".template.html"));
 
   for (const templateFile of templates) {
@@ -83,9 +101,19 @@ function build() {
       console.warn(`Warning: ${pageName}.html has unfilled tokens: ${remaining.join(", ")}`);
     }
 
+    html = applyAssetVersions(html, cssHash, jsHash);
+
     const outputPath = path.join(OUTPUT_DIR, `${pageName}.html`);
     fs.writeFileSync(outputPath, html, "utf8");
     console.log(`Built ${pageName}.html`);
+  }
+
+  for (const staticFile of STATIC_PASSTHROUGH_FILES) {
+    const filePath = path.join(OUTPUT_DIR, staticFile);
+    if (!fs.existsSync(filePath)) continue;
+    const html = applyAssetVersions(fs.readFileSync(filePath, "utf8"), cssHash, jsHash);
+    fs.writeFileSync(filePath, html, "utf8");
+    console.log(`Versioned assets in ${staticFile}`);
   }
 }
 

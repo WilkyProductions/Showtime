@@ -1,6 +1,7 @@
 legacy_path,target_path,status_code,notes
 /the-subaru-specialist/,/oem-certifications/,301,Known legacy OEM/certification page; verify current URL before deployment
-/our-facilities/,/facility/,301,Use only if this legacy path exists in the current index
+/our-facilities/,/locations/,301,Facility page merged into Locations; use only if this legacy path exists in the current index
+/facility/,/locations/,301,Facility page merged into the combined Locations & Facility page
 /about/,/about/,301 or preserve,Preserve current route if already indexed
 /contact/,/contact/,301 or preserve,Preserve current route if already indexed
 /privacy-policy/,/privacy-policy/,preserve,Do not remove existing legal URL until replacement legal copy is approved

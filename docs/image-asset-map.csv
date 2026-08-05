@@ -11,21 +11,14 @@ showtime-logo.png,contact.html,Showtime Collision,390,141,eager/unspecified
 facility-waiting-room.webp,contact.html,Showtime Collision customer reception and waiting area,1600,900,eager/unspecified
 facility-office-front.webp,contact.html,Showtime Collision front office,1200,800,lazy
 showtime-logo.png,contact.html,Showtime Collision,390,141,eager/unspecified
-showtime-logo.png,facility.html,Showtime Collision,390,141,eager/unspecified
-facility-measuring-floor.webp,facility.html,Showtime Collision structural repair floor with measuring equipment,1600,900,eager/unspecified
-facility-main-floor.webp,facility.html,Clean main repair floor at Showtime Collision,1600,1100,lazy
-facility-measuring-floor.webp,facility.html,Structural measuring and repair floor,1200,800,lazy
-facility-aluminum-room.webp,facility.html,Dedicated aluminum work area,1200,800,lazy
-facility-spray-booth.webp,facility.html,Controlled refinishing booth,1200,800,lazy
-facility-paint-mixing.webp,facility.html,PPG paint mixing room,1200,800,lazy
-facility-paint-prep.webp,facility.html,Paint preparation area,1200,800,lazy
-facility-prospot.webp,facility.html,OEM-oriented welding equipment,1200,800,lazy
-facility-frame-rack.webp,facility.html,Frame and unibody repair equipment,1200,800,lazy
-facility-office-front.webp,facility.html,Customer reception,1200,800,lazy
-vehicle-in-booth.webp,facility.html,Vehicle masked and positioned in the Showtime spray booth,1200,1200,lazy
-facility-waiting-room.webp,facility.html,Showtime customer waiting area,1200,800,lazy
-facility-office-front.webp,facility.html,Showtime front office and reception,1200,800,lazy
-showtime-logo.png,facility.html,Showtime Collision,390,141,eager/unspecified
+facility-measuring-floor.webp,locations.html,Structural measuring and repair floor,1200,800,lazy
+facility-aluminum-room.webp,locations.html,Dedicated aluminum work area,1200,800,lazy
+facility-spray-booth.webp,locations.html,Controlled refinishing booth,1200,800,lazy
+facility-paint-mixing.webp,locations.html,PPG paint mixing room,1200,800,lazy
+facility-paint-prep.webp,locations.html,Paint preparation area,1200,800,lazy
+facility-prospot.webp,locations.html,OEM-oriented welding equipment,1200,800,lazy
+facility-frame-rack.webp,locations.html,Frame and unibody repair equipment,1200,800,lazy
+facility-office-front.webp,locations.html,Customer reception,1200,800,lazy
 showtime-logo.png,index.html,Showtime Collision,390,141,eager/unspecified
 home-hero-r8.webp,index.html,Completed blue Audi R8 outside the Showtime Collision repair campus,1800,900,eager/unspecified
 technician-detail.webp,index.html,Showtime technician carefully refinishing a headlight,1000,1000,lazy
