@@ -180,7 +180,7 @@ p { color: var(--gray-600); }
 .brand { width: 205px; flex: 0 0 auto; }
 .brand img { width: 100%; height: auto; }
 .primary-nav { display: flex; align-items: center; justify-content: space-between; gap: 28px; flex: 1; }
-.nav-links { display: flex; align-items: center; gap: 22px; margin-left: auto; }
+.nav-links { display: flex; align-items: center; gap: 22px; }
 .nav-link {
   position: relative;
   padding: 31px 0 29px;
