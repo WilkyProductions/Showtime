@@ -557,7 +557,7 @@ p { color: var(--gray-600); }
 .address-panel h3 { text-transform: uppercase; font-style: italic; font-size: 1.65rem; line-height: 1.15; }
 .local-proof-grid { display: grid; grid-template-columns: .75fr 1.25fr; gap: 60px; align-items: center; }
 .local-proof-image { margin: 0; }
-.local-proof-image img { border-radius: var(--radius); }
+.local-proof-image img { width: 100%; height: auto; border-radius: var(--radius); }
 .local-proof-image figcaption { color: rgba(255,255,255,.5); font-size: .74rem; margin-top: 10px; }
 .location-intro-layout { display: grid; grid-template-columns: 1.12fr .88fr; gap: 75px; align-items: center; }
 .local-steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
