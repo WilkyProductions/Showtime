@@ -41,6 +41,90 @@
     update();
   });
 
+  document.querySelectorAll('[data-slider]').forEach((slider) => {
+    const track = slider.querySelector('[data-slider-track]');
+    const dotsWrap = slider.querySelector('[data-slider-dots]');
+    const prevBtn = slider.querySelector('[data-slider-prev]');
+    const nextBtn = slider.querySelector('[data-slider-next]');
+    const toggleBtn = slider.querySelector('[data-slider-toggle]');
+    if (!track) return;
+    const slides = Array.from(track.children);
+    let index = 0;
+
+    const dots = slides.map((_, i) => {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.setAttribute('aria-label', `Go to photo ${i + 1}`);
+      dot.addEventListener('click', () => { goTo(i); restartAutoplay(); });
+      if (dotsWrap) dotsWrap.appendChild(dot);
+      return dot;
+    });
+
+    function update() {
+      track.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((dot, i) => dot.classList.toggle('is-active', i === index));
+    }
+
+    function goTo(i) {
+      index = (i + slides.length) % slides.length;
+      update();
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', () => { goTo(index - 1); restartAutoplay(); });
+    if (nextBtn) nextBtn.addEventListener('click', () => { goTo(index + 1); restartAutoplay(); });
+
+    let startX = null;
+    track.addEventListener('touchstart', (event) => { startX = event.touches[0].clientX; }, { passive: true });
+    track.addEventListener('touchend', (event) => {
+      if (startX === null) return;
+      const diff = event.changedTouches[0].clientX - startX;
+      if (Math.abs(diff) > 40) { goTo(index + (diff < 0 ? 1 : -1)); restartAutoplay(); }
+      startX = null;
+    });
+
+    const AUTOPLAY_MS = 3000;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let autoplayTimer = null;
+    let userPaused = false;
+
+    function stopAutoplay() {
+      if (autoplayTimer) { window.clearInterval(autoplayTimer); autoplayTimer = null; }
+    }
+
+    function startAutoplay() {
+      if (reduceMotion || slides.length < 2 || userPaused) return;
+      stopAutoplay();
+      autoplayTimer = window.setInterval(() => goTo(index + 1), AUTOPLAY_MS);
+    }
+
+    function restartAutoplay() { startAutoplay(); }
+
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        userPaused = !userPaused;
+        toggleBtn.classList.toggle('is-paused', userPaused);
+        toggleBtn.setAttribute('aria-pressed', String(userPaused));
+        toggleBtn.setAttribute('aria-label', userPaused ? 'Play slideshow' : 'Pause slideshow');
+        if (userPaused) stopAutoplay(); else startAutoplay();
+      });
+    }
+
+    update();
+
+    if ('IntersectionObserver' in window) {
+      const playObserver = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          startAutoplay();
+          obs.unobserve(entry.target);
+        });
+      }, { threshold: 0.3 });
+      playObserver.observe(slider);
+    } else {
+      startAutoplay();
+    }
+  });
+
   const revealItems = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const observer = new IntersectionObserver((entries, obs) => {

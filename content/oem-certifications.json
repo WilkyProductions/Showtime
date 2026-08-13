@@ -9,8 +9,8 @@
       "count_label": "1 make",
       "kicker": "Subaru Certified Collision Center",
       "title": "Subaru",
-      "make_tags": "<span>Subaru</span>",
-      "description": "Subaru Certified Collision Center coverage for Subaru vehicles at the Running Springs production facility.",
+      "bg_logo": "<img alt=\"\" src=\"assets/images/oem-logos/subaru.svg\"/>",
+      "make_tags": "<span><img alt=\"\" src=\"assets/images/oem-logos/subaru.svg\"/>Subaru</span>",
       "card_class": "",
       "wrap_a_open": "", "wrap_a_close": "", "wrap_b_open": "", "wrap_b_close": ""
     },
@@ -19,8 +19,8 @@
       "count_label": "1 make",
       "kicker": "Ford Certified Collision Network",
       "title": "Ford",
-      "make_tags": "<span>Ford</span>",
-      "description": "Ford Certified Collision Network coverage for Ford vehicles, supported by the shop&rsquo;s structural and refinishing capabilities.",
+      "bg_logo": "<img alt=\"\" src=\"assets/images/oem-logos/ford.svg\"/>",
+      "make_tags": "<span><img alt=\"\" src=\"assets/images/oem-logos/ford.svg\"/>Ford</span>",
       "card_class": "",
       "wrap_a_open": "", "wrap_a_close": "", "wrap_b_open": "", "wrap_b_close": ""
     },
@@ -29,8 +29,8 @@
       "count_label": "2 makes",
       "kicker": "Honda and Acura Certified Collision",
       "title": "Honda &amp; Acura",
-      "make_tags": "<span>Honda</span><span>Acura</span>",
-      "description": "Honda and Acura Certified Collision coverage for both Honda and Acura vehicles.",
+      "bg_logo": "<img alt=\"\" src=\"assets/images/oem-logos/honda.svg\"/>",
+      "make_tags": "<span><img alt=\"\" src=\"assets/images/oem-logos/honda.svg\"/>Honda</span><span><img alt=\"\" src=\"assets/images/oem-logos/acura.svg\"/>Acura</span>",
       "card_class": "",
       "wrap_a_open": "", "wrap_a_close": "", "wrap_b_open": "", "wrap_b_close": ""
     },
@@ -39,8 +39,8 @@
       "count_label": "1 make",
       "kicker": "Nissan Certified Collision Repair Network",
       "title": "Nissan",
-      "make_tags": "<span>Nissan</span>",
-      "description": "Manufacturer-certified collision repair for Nissan vehicles, supported by Nissan-specific repair information, training, tooling, and program requirements.",
+      "bg_logo": "<img alt=\"\" src=\"assets/images/oem-logos/nissan.svg\"/>",
+      "make_tags": "<span><img alt=\"\" src=\"assets/images/oem-logos/nissan.svg\"/>Nissan</span>",
       "card_class": "",
       "wrap_a_open": "", "wrap_a_close": "", "wrap_b_open": "", "wrap_b_close": ""
     },
@@ -49,8 +49,8 @@
       "count_label": "1 make",
       "kicker": "INFINITI Certified Collision Repair Network",
       "title": "INFINITI",
-      "make_tags": "<span>INFINITI</span>",
-      "description": "Manufacturer-certified collision repair for INFINITI vehicles through the dedicated INFINITI collision-repair network.",
+      "bg_logo": "<img alt=\"\" src=\"assets/images/oem-logos/infiniti.svg\"/>",
+      "make_tags": "<span><img alt=\"\" src=\"assets/images/oem-logos/infiniti.svg\"/>INFINITI</span>",
       "card_class": "",
       "wrap_a_open": "", "wrap_a_close": "", "wrap_b_open": "", "wrap_b_close": ""
     },
@@ -59,8 +59,8 @@
       "count_label": "1 make",
       "kicker": "Hyundai Certified Collision Repair Network",
       "title": "Hyundai",
-      "make_tags": "<span>Hyundai</span>",
-      "description": "Manufacturer-certified collision repair for Hyundai vehicles through Hyundai's certified repair network.",
+      "bg_logo": "<img alt=\"\" src=\"assets/images/oem-logos/hyundai.svg\"/>",
+      "make_tags": "<span><img alt=\"\" src=\"assets/images/oem-logos/hyundai.svg\"/>Hyundai</span>",
       "card_class": "",
       "wrap_a_open": "", "wrap_a_close": "", "wrap_b_open": "", "wrap_b_close": ""
     },
@@ -69,8 +69,8 @@
       "count_label": "1 make",
       "kicker": "Kia Certified Collision Repair",
       "title": "Kia",
-      "make_tags": "<span>Kia</span>",
-      "description": "Kia Certified Collision Repair coverage for Kia vehicles at the Running Springs production facility.",
+      "bg_logo": "<img alt=\"\" src=\"assets/images/oem-logos/kia.svg\"/>",
+      "make_tags": "<span><img alt=\"\" src=\"assets/images/oem-logos/kia.svg\"/>Kia</span>",
       "card_class": "",
       "wrap_a_open": "", "wrap_a_close": "", "wrap_b_open": "", "wrap_b_close": ""
     },
@@ -79,8 +79,8 @@
       "count_label": "5 makes",
       "kicker": "Mopar Certified Collision Network",
       "title": "Chrysler Family",
-      "make_tags": "<span>Chrysler</span><span>Dodge</span><span>Jeep</span><span>Ram</span><span>FIAT</span>",
-      "description": "Mopar Certified Collision Network coverage for Chrysler, Dodge, Jeep, Ram, and FIAT vehicles.",
+      "bg_logo": "<img alt=\"\" src=\"assets/images/oem-logos/mopar.svg\"/>",
+      "make_tags": "<span><img alt=\"\" src=\"assets/images/oem-logos/chrysler.svg\"/>Chrysler</span><span><img alt=\"\" src=\"assets/images/oem-logos/dodge.svg\"/>Dodge</span><span><img alt=\"\" src=\"assets/images/oem-logos/jeep.svg\"/>Jeep</span><span><img alt=\"\" src=\"assets/images/oem-logos/ram.svg\"/>Ram</span><span><img alt=\"\" src=\"assets/images/oem-logos/fiat.svg\"/>FIAT</span>",
       "card_class": "",
       "wrap_a_open": "", "wrap_a_close": "", "wrap_b_open": "", "wrap_b_close": ""
     },
@@ -89,8 +89,8 @@
       "count_label": "4 makes",
       "kicker": "GM Collision Repair Network",
       "title": "General Motors",
-      "make_tags": "<span>Chevrolet</span><span>GMC</span><span>Buick</span><span>Cadillac</span>",
-      "description": "GM Collision Repair Network coverage for Chevrolet, GMC, Buick, and Cadillac vehicles, with all four GM brands named clearly.",
+      "bg_logo": "<img alt=\"\" src=\"assets/images/oem-logos/generalmotors.svg\"/>",
+      "make_tags": "<span><img alt=\"\" src=\"assets/images/oem-logos/chevrolet.svg\"/>Chevrolet</span><span><img alt=\"\" src=\"assets/images/oem-logos/gmc.svg\"/>GMC</span><span><img alt=\"\" src=\"assets/images/oem-logos/buick.svg\"/>Buick</span><span><img alt=\"\" src=\"assets/images/oem-logos/cadillac.svg\"/>Cadillac</span>",
       "card_class": "featured",
       "wrap_a_open": "<div>", "wrap_a_close": "</div>", "wrap_b_open": "<div>", "wrap_b_close": "</div>"
     }

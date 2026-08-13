@@ -59,7 +59,6 @@
 <section class="oem-stat-band">
 <div class="container oem-stat-grid">
 <div><strong>17 Makes</strong><span>Named individually on this page</span></div>
-<div><strong>Named Programs</strong><span>Manufacturer credentials presented individually</span></div>
 <div><strong>Running Springs</strong><span>Complete certified production facility</span></div>
 <div><strong>Big Bear</strong><span>Staffed intake and rental-car access</span></div>
 </div>
@@ -89,9 +88,8 @@
 <div aria-label="17 certified vehicle makes" class="oem-roster-total"><div><strong>17</strong><span>Certified makes</span></div></div>
 </div>
 <div class="oem-program-grid">
-{{#each programs}}<article class="oem-program-card {{this.card_class}} reveal">{{this.wrap_a_open}}<div class="oem-program-top"><span class="oem-program-number">{{this.number}}</span><span class="oem-program-count">{{this.count_label}}</span></div><span class="oem-program-kicker">{{this.kicker}}</span><h3>{{this.title}}</h3>{{this.wrap_a_close}}{{this.wrap_b_open}}<div class="oem-make-tags">{{this.make_tags}}</div><p>{{this.description}}</p>{{this.wrap_b_close}}</article>
+{{#each programs}}<article class="oem-program-card {{this.card_class}} reveal"><div class="oem-program-logo-bg">{{this.bg_logo}}</div>{{this.wrap_a_open}}<div class="oem-program-top"><span class="oem-program-number">{{this.number}}</span><span class="oem-program-count">{{this.count_label}}</span></div><h3>{{this.title}}</h3><span class="oem-program-kicker">{{this.kicker}}</span>{{this.wrap_a_close}}{{this.wrap_b_open}}<div class="oem-make-tags">{{this.make_tags}}</div>{{this.wrap_b_close}}</article>
 {{/each}}</div>
-<div class="certification-source-note reveal"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 10v6M12 7h.01"></path></svg><span>The production handoff will use the exact current manufacturer program titles, approved badges, certificate dates, and any required legal language supplied by Showtime. Text-based marks are intentionally used in this approval preview so no unapproved OEM logo is imitated.</span></div>
 </div>
 </section>
 <section class="section section-dark">
