@@ -28,6 +28,28 @@
   --ease: cubic-bezier(.2,.7,.2,1);
 }
 
+@font-face {
+  font-family: "Forza";
+  src: url("../fonts/Forza-Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Forza";
+  src: url("../fonts/Forza-Bold.ttf") format("truetype");
+  font-weight: 600 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Forza";
+  src: url("../fonts/Forza-BlackItalic.ttf") format("truetype");
+  font-weight: 600 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; overflow-x: clip; }
 body {
