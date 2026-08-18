@@ -441,27 +441,13 @@ p { color: var(--gray-600); }
 .facility-mosaic figure:hover img { transform: scale(1.04); }
 
 /* Location cards */
-.location-grid, .location-grid-large { display: grid; grid-template-columns: 1fr; gap: 20px; }
-.location-card { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: 0 0 0 1px rgba(218,0,32,1), 0 0 8px 0 rgba(218,0,32,.95); transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
-.location-card:hover { transform: translateY(-7px); box-shadow: 0 0 0 1px rgba(218,0,32,1), 0 0 12px 1px rgba(218,0,32,1); }
-.location-image { display: block; overflow: hidden; }
-.location-image img { width: 100%; aspect-ratio: 1.25/1; object-fit: cover; transition: transform .55s var(--ease); }
-.location-card:hover .location-image img { transform: scale(1.045); }
-.location-card-body { padding: 24px; }
-.location-card h3 a:hover { color: var(--red); }
 .location-tag { display: inline-flex; padding: 5px 9px; background: var(--gray-100); border-radius: 999px; font-size: .62rem; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 15px; }
 .location-tag.physical { background: var(--red); color: var(--white); }
-.location-card p { font-size: .9rem; min-height: auto; }
-/* Horizontal layout: name/copy on the left, a wide-but-short image on the right */
-.location-card { display: flex; flex-direction: row-reverse; align-items: stretch; height: 200px; }
-.location-image { flex: 0 0 42%; }
-.location-image img { display: block; width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; }
-.location-card-body { flex: 1 1 58%; display: flex; flex-direction: column; justify-content: center; padding: 36px 40px; }
 
 /* Shared location picker: Locations hub + all 4 location pages */
 .location-picker-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 22px; }
-.location-picker-card { position: relative; display: flex; flex-direction: column; background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
-.location-picker-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.location-picker-card { position: relative; display: flex; flex-direction: column; background: var(--white); border: 1px solid var(--gray-100); border-radius: var(--radius); overflow: hidden; box-shadow: 0 0 0 1px rgba(218,0,32,.3), 0 0 16px 0 rgba(218,0,32,.25), var(--shadow-sm); transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
+.location-picker-card:hover { transform: translateY(-6px); box-shadow: 0 0 0 1px rgba(218,0,32,.45), 0 0 20px 2px rgba(218,0,32,.35), var(--shadow); }
 .location-picker-body { padding: 28px 26px 26px; display: flex; flex-direction: column; flex: 1; }
 .location-picker-body h3 { font-size: 1.3rem; text-transform: uppercase; font-style: italic; margin: 0 0 10px; }
 .location-picker-body p { font-size: .88rem; color: var(--gray-600); margin: 0 0 22px; flex: 1; }
@@ -754,8 +740,8 @@ p { color: var(--gray-600); }
   .nav-phone { display: flex; justify-content: center; min-height: 48px; border: 1px solid rgba(255,255,255,.2); border-radius: 8px; }
   .section { padding: 78px 0; }
   .hero-home { min-height: 760px; }
-  .hero-home-media { object-fit: contain; object-position: center; }
-  .hero-home-overlay { background: linear-gradient(to bottom, rgba(0,0,0,.92) 0%, rgba(0,0,0,.25) 26%, rgba(0,0,0,.25) 74%, rgba(0,0,0,.92) 100%); }
+  .hero-home-media { object-position: center; }
+  .hero-home-overlay { background: linear-gradient(90deg, rgba(0,0,0,.96), rgba(0,0,0,.72) 72%, rgba(0,0,0,.36)), linear-gradient(0deg, rgba(0,0,0,.8), transparent); }
   .hero-home-content { padding-top: 70px; }
   .hero-home h1 { max-width: 700px; }
   .hero-proof { grid-template-columns: repeat(2,1fr); gap: 20px 0; }
@@ -780,8 +766,6 @@ p { color: var(--gray-600); }
   .faq-layout { grid-template-columns: 1fr; gap: 35px; }
   .faq-intro, .values-copy { position: static; }
   .inner-hero { min-height: 620px; }
-  .inner-hero-media { object-fit: contain; }
-  .inner-hero-overlay { background: linear-gradient(to bottom, rgba(0,0,0,.92) 0%, rgba(0,0,0,.25) 26%, rgba(0,0,0,.25) 74%, rgba(0,0,0,.92) 100%); }
   .inner-hero-badge { position: static; display: inline-block; margin-top: 28px; }
   .facility-grid { grid-template-columns: 1fr; }
   .location-picker-grid { grid-template-columns: repeat(2,1fr); }
@@ -843,9 +827,6 @@ p { color: var(--gray-600); }
   .compact-service-grid, .contact-options { grid-template-columns: 1fr; }
   .service-accordion-pill { padding: 0 16px; height: 50px; }
   .service-accordion-pill h3 { font-size: .82rem; }
-  .location-card { flex-direction: column; height: auto; }
-  .location-image img { height: auto; aspect-ratio: 1.6/1; }
-  .location-card-body { padding: 24px; }
   .faq-list summary { font-size: .95rem; }
   .faq-list details p { padding-right: 10px; }
   .inner-hero { min-height: 650px; }
