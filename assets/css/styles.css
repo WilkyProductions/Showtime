@@ -744,9 +744,13 @@ p { color: var(--gray-600); }
   .hero-home-overlay { background: linear-gradient(90deg, rgba(0,0,0,.96), rgba(0,0,0,.72) 72%, rgba(0,0,0,.36)), linear-gradient(0deg, rgba(0,0,0,.8), transparent); }
   .hero-home-content { padding-top: 70px; }
   .hero-home h1 { max-width: 700px; }
-  .hero-proof { grid-template-columns: repeat(2,1fr); gap: 20px 0; }
-  .hero-proof > *:nth-child(2) { border-right: 0; }
-  .hero-proof > *:nth-child(3) { padding-left: 0; }
+  .hero-proof { grid-template-columns: repeat(4,1fr); }
+  .hero-proof > * { padding: 0 14px; }
+  .hero-proof strong { font-size: .88rem; }
+  .hero-proof a strong { font-size: 1.15rem; }
+  .hero-stars { font-size: 1.3rem; }
+  .hero-proof span { white-space: normal; font-size: .64rem; }
+  .hero-icar-badge { height: 38px; }
   .quick-safety-inner { padding: 15px 0; align-items: flex-start; flex-wrap: wrap; }
   .quick-safety p { min-width: calc(100% - 65px); }
   .quick-safety a { margin-left: 58px; }
@@ -804,13 +808,16 @@ p { color: var(--gray-600); }
   .hero-actions { display: grid; width: 100%; }
   .hero-actions .btn { width: 100%; }
   .estimate-note { align-items: flex-start; }
-  .hero-proof { grid-template-columns: 1fr 1fr; }
-  .hero-proof > * { padding: 0 12px; }
-  .hero-proof strong { font-size: .95rem; }
-  .hero-proof span { white-space: normal; line-height: 1.35; }
+  .hero-proof { grid-template-columns: repeat(4,1fr); }
+  .hero-proof > * { padding: 0 6px; }
+  .hero-proof strong { font-size: .64rem; letter-spacing: -.01em; }
+  .hero-proof a strong { font-size: .82rem; }
+  .hero-stars { font-size: .95rem; }
+  .hero-proof span { white-space: normal; line-height: 1.25; font-size: .52rem; }
+  .hero-icar-badge { height: 26px; }
   .quick-safety-icon { display: none; }
-  .quick-safety p { min-width: 100%; }
-  .quick-safety a { margin-left: 0; }
+  .quick-safety p { min-width: 100%; font-size: .78rem; line-height: 1.4; }
+  .quick-safety a { margin-left: 0; font-size: .7rem; }
   .intent-card { padding: 28px; }
   .proof-collage { min-height: 490px; }
   .proof-main { width: 84%; height: 72%; }
