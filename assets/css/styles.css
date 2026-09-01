@@ -649,7 +649,7 @@ p { color: var(--gray-600); }
 .contact-detail-list strong { font-family: var(--font-display); font-style: italic; text-transform: uppercase; }
 .contact-detail-list em { color: var(--gray-600); font-size: .75rem; }
 .contact-image { position: relative; }
-.contact-image img { width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow); }
+.contact-image img { width: 100%; height: auto; aspect-ratio: 3/2; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow); }
 .contact-image-badge { position: absolute; left: 24px; bottom: 24px; padding: 16px 20px; background: rgba(0,0,0,.82); color: var(--white); border-left: 4px solid var(--red); border-radius: 8px; backdrop-filter: blur(8px); }
 .contact-image-badge strong, .contact-image-badge span { display: block; }
 .contact-image-badge strong { font-family: var(--font-display); font-style: italic; text-transform: uppercase; }
